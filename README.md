@@ -1,6 +1,6 @@
 # LAB - Class 27
 
-### Project: Django snacks
+### Project: Django Models
 ### Author: Felix A. Taveras
 ### Links and Resources
 
