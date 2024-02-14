@@ -1,0 +1,27 @@
+{% load compress %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snacks</title>
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'src/output.css' %}">
+    {% endcompress %}
+   
+    <title>Snacks</title>
+</head>
+<body>
+    <header class="bg-blue-300 px-2 py-8 ">
+        <a class="text-4xl" href="{% url 'snack_list' %}">Snack Tracker</a>
+    <nav class="flex space-x-4 justify-center">
+      <a class="hover:bg-gray-700 px-3 py-2 rounded" href="/">Home</a>
+    </nav>
+  </header>
+{% block content %}
+child template here
+{% endblock content %}
+</body>
+</html>
